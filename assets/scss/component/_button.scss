@@ -1,0 +1,22 @@
+/* main btn start */
+.main-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 35px;
+	background-color:$blue;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 700;
+	border-radius: 5px;
+	transition: all .3s;
+    &:hover{
+        color: #fff;
+        background-color: #191919;
+    }
+    i{
+        margin-left: 10px;
+    }
+}
+/* main btn end */
