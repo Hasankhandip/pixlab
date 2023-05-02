@@ -1,5 +1,5 @@
 /* main btn start */
-.main-btn {
+.btn-1 {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -17,6 +17,28 @@
     }
     i{
         margin-left: 10px;
+    }
+}
+.btn-2 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 35px;
+	background-color: transparent;
+	border: 1px solid $blue;
+	color: $blue;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 700;
+	border-radius: 5px;
+	transition: all .3s;
+    &:hover{
+        color: #fff;
+        background-color: $blue;
+    }
+    svg{
+        margin-left: 10px;
+		width: 8px;
     }
 }
 /* main btn end */
