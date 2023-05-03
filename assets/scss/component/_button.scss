@@ -41,4 +41,14 @@
 		width: 8px;
     }
 }
+.btn-link{
+	font-size: 18px;
+	font-weight: 700;
+	color: $blue;
+	text-decoration: underline;
+	svg{
+		margin-left: 5px;
+		font-size: 18px;
+	}
+}
 /* main btn end */
