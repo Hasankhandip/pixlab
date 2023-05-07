@@ -535,8 +535,54 @@ a:hover {
 /* portfolio-section start */
 .portfolio-section {
   padding-top: 130px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   background-color: #fafafb;
+}
+
+.portfolio-text {
+  padding-top: 30px;
+}
+
+.portfolio-title {
+  margin-bottom: 5px;
+}
+.portfolio-title a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.portfolio-title a:hover {
+  color: #5956e9;
+}
+
+.portfolio-category {
+  font-size: 18px;
+  font-weight: 500;
+  color: #808285;
+}
+
+.filter-button-group {
+  margin-bottom: 50px;
+}
+
+.filter-button {
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 700;
+  padding: 5px 15px;
+  background-color: transparent;
+  line-height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+.filter-button.active {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(89, 86, 233, 0.2);
+          box-shadow: 0px 10px 30px 0px rgba(89, 86, 233, 0.2);
 }
 
 /* portfolio-section end *//*# sourceMappingURL=style.css.map */

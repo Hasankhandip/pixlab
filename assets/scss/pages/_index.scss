@@ -225,7 +225,46 @@
 /* portfolio-section start */
 .portfolio-section{
     padding-top: 130px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     background-color: $light-gray;
+}
+.portfolio-text{
+    padding-top: 30px;
+}
+.portfolio-title{
+    a{
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        &:hover{
+            color: $blue;
+        }
+    }
+    margin-bottom: 5px;
+}
+.portfolio-category {
+	font-size: 18px;
+    font-weight: 500;
+    color: $p-color;
+}
+.filter-button-group {
+	margin-bottom: 50px;
+}
+.filter-button {
+    font-size: 18px;
+	display: inline-block;
+	font-weight: 700;
+	padding: 5px 15px;
+	background-color: transparent;
+	line-height: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: all .3s;
+    border: none;
+    &.active{
+        background-color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(89, 86, 233, 0.2);
+    }
 }
 /* portfolio-section end */

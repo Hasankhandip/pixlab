@@ -21,3 +21,27 @@ $(document).ready(function(){
     }
   ]
   });});
+// slick slide end
+
+/* isotop-filter start */
+// init Isotope
+var $grid = $('.portfolio-grid').isotope({
+  // options
+  itemSelector: '.portfolio-item'
+});
+$('.portfolio-grid').isotope({
+  // options
+  itemSelector: '.portfolio-item',
+  layoutMode: 'fitRows'
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+$('.filter-button').on( 'click',function() {
+  $('.filter-button').removeClass('active');
+  $(this).addClass('active');
+});
+
+/* isotop-filter end */
