@@ -148,11 +148,17 @@
     font-weight: 700;
     line-height: 60px;
 }
+.main-title-2{
+    color: #fff;
+}
 .details-title{
     font-size: 22px;
     color: $blue;
     margin-bottom: 25px;
     font-weight: 700;
+}
+.details-title-2{
+    color: #fff;
 }
 .about-details-list{
     margin-bottom: 35px;
@@ -370,7 +376,7 @@
 /* counter-section start */
 .counter-section{
     padding-top: 240px;
-    padding-bottom: 90px;
+    padding-bottom: 140px;
 }
 .counter-item{
     position: relative;
@@ -413,3 +419,111 @@
     margin-bottom: 8px;
 }
 /* counter-section end */
+
+/* testimonial-section start */
+.testimonial-section{
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 80px;
+    background-color: $blue;
+    z-index: 1;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 150px;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/assets/images/testimonial/bg.jpg) no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+}
+.testimonial-shape-img-area{
+    position: absolute;
+    top: 100px;
+    right: 15%;
+    z-index: 1;
+    &::after{
+        position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 110px;
+    z-index: -1;
+    }
+}
+.testimonial-shape-img{
+    border-radius: 110px;
+}
+.testimonial-img-area{
+    img{
+        border-radius:220px ;
+    }
+}
+.testimonial-icon{
+    width: 55px;
+    margin-bottom: 20px;
+}
+.testimonial-title{
+    font-size: 40px;
+    line-height: 55px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.testimonial-author-title{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+.testimonial-author-details{
+    color: #fff;
+}
+.testimonial-slider {
+    position: relative;
+}
+.slick-dots {
+    position: absolute;
+    right: -20%;
+    bottom: 40%;
+    display: inline-block;
+    li{
+        button{
+            font-size: 0px;
+            background-color: #fff;
+            position: relative;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            z-index: 7;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                z-index: -1;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .3s;
+            }
+        }
+    }
+    .slick-active{
+        button{
+            &::after{
+                visibility: visible;
+                opacity: 100%;
+            }
+        }
+    }
+}
+/* testimonial-section end */

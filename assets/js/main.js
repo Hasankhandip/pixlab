@@ -43,5 +43,20 @@ $('.filter-button').on( 'click',function() {
   $('.filter-button').removeClass('active');
   $(this).addClass('active');
 });
-
 /* isotop-filter end */
+
+/* slick slider start */
+$(document).ready(function(){
+  $('.testimonial-slider').slick({
+    autoplay:true,
+    autoplaySpeed: 3000,
+    speed: 1500,
+    prevArrow: false,
+    nextArrow:  false,
+    slidesToShow: 1,
+  slidesToScroll: 1,
+  vertical:true,
+  dots:true,
+  });
+});
+/* slick slider end */
