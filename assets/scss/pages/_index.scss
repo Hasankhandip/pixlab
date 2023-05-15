@@ -527,3 +527,87 @@
     }
 }
 /* testimonial-section end */
+
+/* team-section start */
+.team-section{
+    padding-top: 130px;
+}
+.team-item{
+    &:hover{
+        .team-hover{
+            visibility: visible;
+            opacity: 100%;
+        }
+        .team-social-link{
+            li{
+                &:nth-child(1),
+                &:nth-child(3){
+                    transform: translateY(-10px);
+                }
+        }
+    }
+    }
+}
+.team-img{
+    border-radius: 135px;
+}
+.team-img-area{
+    position: relative;
+}
+.team-hover{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+.team-social-link{
+    display: flex;
+    justify-content: center;
+    li{
+        margin-left: 5px;
+        margin-right: 5px;
+        &:nth-child(1),
+        &:nth-child(3){
+            transform: translateY(0px);
+            transition: all .4s;
+        }
+        a{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blue-dark);
+            box-shadow: 0px 10px 30px 0px rgba(89, 86, 233, 0.2);
+            svg{
+                font-size: 18px;
+                color: $blue;
+            }
+        }
+    }
+}
+.team-text-area{
+    text-align: center;
+    padding-top: 30px;
+}
+.team-title {
+	font-size: 24px;
+	font-weight: 700;
+    margin-bottom: 3px;
+    a{
+        color: #000;
+    }
+}
+.team-details {
+	font-weight: 500;
+}
+/* team-section end */
