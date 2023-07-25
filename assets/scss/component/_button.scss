@@ -3,7 +3,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 15px 35px;
+	padding: 12px 30px;
 	background-color:$blue;
 	color: #fff;
 	font-size: 16px;
@@ -23,7 +23,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 15px 35px;
+	padding: 12px 30px;
 	background-color: transparent;
 	border: 1px solid $blue;
 	color: $blue;
@@ -45,8 +45,8 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 15px 35px;
-	background-color:$blue;
+	padding: 12px 30px;
+	background-color:transparent;
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 16px;
@@ -61,6 +61,28 @@
     }
     i{
         margin-left: 10px;
+    }
+}
+.btn-4 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 30px;
+	background-color: $blue;
+	border: 1px solid $blue;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 700;
+	border-radius: 5px;
+	transition: all .4s;
+    &:hover{
+        color: $blue;
+        background-color: transparent;
+    }
+    svg{
+        margin-left: 10px;
+		width: 8px;
     }
 }
 .btn-link{
